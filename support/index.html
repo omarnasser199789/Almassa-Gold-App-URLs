@@ -1,46 +1,332 @@
-<h1 id="almassa-gold-app">Almassa Gold App</h1>
-<p><strong>Almassa Gold App</strong> is your all-in-one platform for
-smart and secure gold investment. Track live gold prices, buy and sell
-gold easily, and manage your portfolio anytime, anywhere.</p>
-<p>Invest with confidence with real-time updates, transparent pricing,
-and a smooth user experience.</p>
-<hr />
-<h2 id="key-features">Key Features</h2>
-<ul>
-<li><strong>Live Gold Price Tracking</strong> – Monitor gold prices in
-real-time.</li>
-<li><strong>Secure Buying &amp; Selling</strong> – Trade gold safely and
-transparently.</li>
-<li><strong>Portfolio Management</strong> – Manage your investments in
-one place.</li>
-<li><strong>User-Friendly Interface</strong> – Simple, intuitive, and
-accessible.</li>
-<li><strong>Market Updates</strong> – Stay informed about market trends
-and news.</li>
-</ul>
-<hr />
-<h2 id="keywords">Keywords</h2>
-<p><strong>Primary:</strong> gold investment, gold trading, buy gold,
-sell gold, gold prices, live gold price, gold app, gold market<br />
-<strong>Secondary:</strong> digital gold, gold portfolio, gold savings,
-precious metals, gold tracker, gold exchange, gold investment app<br />
-<strong>Long-Tail:</strong> secure gold trading, real time gold prices,
-invest in gold online, gold price tracker app, smart gold
-investment<br />
-<strong>Brand Keywords:</strong> Almassa Gold, Almassa Gold App, Almassa
-Gold Trading</p>
-<hr />
-<h2 id="download-support">Download &amp; Support</h2>
-<ul>
-<li><strong>Support URL:</strong> <a
-href="https://www.almassagold.com/support">https://www.almassagold.com/support</a></li>
-<li><strong>Marketing URL:</strong> <a
-href="https://www.almassagold.com">https://www.almassagold.com</a></li>
-<li><strong>Website:</strong> <a
-href="https://www.almassagold.com">https://www.almassagold.com</a></li>
-</ul>
-<p>For any questions, feedback, or assistance, visit our support or
-marketing pages.</p>
-<hr />
-<p><strong>Invest smarter. Trade securely. Almassa Gold – Where your
-value shines. 💎</strong></p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Almassa Gold - Smart Gold Investment Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            background: radial-gradient(ellipse at top, rgba(218, 165, 32, 0.15), transparent),
+                        radial-gradient(ellipse at bottom, rgba(255, 215, 0, 0.1), transparent);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(218, 165, 32, 0.03) 2px,
+                rgba(218, 165, 32, 0.03) 4px
+            );
+            animation: shimmer 20s linear infinite;
+        }
+
+        @keyframes shimmer {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1200px;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 800;
+            background: linear-gradient(135deg, #FFD700 0%, #DAA520 50%, #B8860B 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+            animation: glow 3s ease-in-out infinite;
+            text-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+        }
+
+        @keyframes glow {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.2); }
+        }
+
+        .tagline {
+            font-size: clamp(1.1rem, 3vw, 1.5rem);
+            color: #e0e0e0;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .subtitle {
+            font-size: clamp(1rem, 2.5vw, 1.2rem);
+            color: #b0b0b0;
+            margin-bottom: 3rem;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 4rem;
+        }
+
+        .btn {
+            padding: 1rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 600;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #FFD700, #DAA520);
+            color: #1a1a1a;
+            box-shadow: 0 10px 30px rgba(255, 215, 0, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.6);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #FFD700;
+            border: 2px solid #FFD700;
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 215, 0, 0.1);
+            transform: translateY(-3px);
+        }
+
+        .features {
+            padding: 5rem 2rem;
+            background: linear-gradient(180deg, transparent, rgba(218, 165, 32, 0.05));
+        }
+
+        .features-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            background: linear-gradient(135deg, #FFD700, #DAA520);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 4rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, rgba(255, 215, 0, 0.1), rgba(218, 165, 32, 0.05));
+            padding: 2rem;
+            border-radius: 20px;
+            border: 1px solid rgba(255, 215, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(255, 215, 0, 0.2);
+            border-color: rgba(255, 215, 0, 0.5);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.4rem;
+            color: #FFD700;
+            margin-bottom: 0.8rem;
+        }
+
+        .feature-desc {
+            color: #c0c0c0;
+            line-height: 1.6;
+        }
+
+        .keywords-section {
+            padding: 4rem 2rem;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .keywords-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .keyword-group {
+            margin-bottom: 2rem;
+        }
+
+        .keyword-label {
+            color: #FFD700;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .keyword-list {
+            color: #b0b0b0;
+            line-height: 1.8;
+        }
+
+        .footer {
+            padding: 3rem 2rem;
+            text-align: center;
+            background: linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.5));
+        }
+
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: #FFD700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: #fff;
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.5);
+        }
+
+        .footer-tagline {
+            font-size: 1.3rem;
+            color: #FFD700;
+            font-weight: 600;
+            margin-top: 2rem;
+        }
+
+        .diamond {
+            display: inline-block;
+            animation: spin 3s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Almassa Gold App</h1>
+            <p class="tagline">Your all-in-one platform for smart and secure gold investment. Track live gold prices, buy and sell gold easily, and manage your portfolio anytime, anywhere.</p>
+            <p class="subtitle">Invest with confidence with real-time updates, transparent pricing, and a smooth user experience.</p>
+            <div class="cta-buttons">
+                <a href="https://www.almassagold.com" class="btn btn-primary">Start Investing</a>
+                <a href="https://www.almassagold.com/support" class="btn btn-secondary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features-container">
+            <h2 class="section-title">Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">📈</div>
+                    <h3 class="feature-title">Live Gold Price Tracking</h3>
+                    <p class="feature-desc">Monitor gold prices in real-time with accurate, up-to-the-minute market data.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">Secure Buying & Selling</h3>
+                    <p class="feature-desc">Trade gold safely and transparently with our secure platform.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💼</div>
+                    <h3 class="feature-title">Portfolio Management</h3>
+                    <p class="feature-desc">Manage your investments in one centralized, easy-to-use dashboard.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">✨</div>
+                    <h3 class="feature-title">User-Friendly Interface</h3>
+                    <p class="feature-desc">Simple, intuitive, and accessible design for seamless navigation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📰</div>
+                    <h3 class="feature-title">Market Updates</h3>
+                    <p class="feature-desc">Stay informed about market trends, news, and insights that matter.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="keywords-section">
+        <div class="keywords-container">
+            <h2 class="section-title">What We Offer</h2>
+            <div class="keyword-group">
+                <div class="keyword-label">Investment Solutions:</div>
+                <p class="keyword-list">Gold investment • Gold trading • Buy gold • Sell gold • Gold prices • Live gold price • Gold app • Gold market</p>
+            </div>
+            <div class="keyword-group">
+                <div class="keyword-label">Digital Services:</div>
+                <p class="keyword-list">Digital gold • Gold portfolio • Gold savings • Precious metals • Gold tracker • Gold exchange • Gold investment app</p>
+            </div>
+            <div class="keyword-group">
+                <div class="keyword-label">Smart Features:</div>
+                <p class="keyword-list">Secure gold trading • Real time gold prices • Invest in gold online • Gold price tracker app • Smart gold investment</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="https://www.almassagold.com" class="footer-link">Home</a>
+            <a href="https://www.almassagold.com/support" class="footer-link">Support</a>
+            <a href="https://www.almassagold.com" class="footer-link">About Us</a>
+        </div>
+        <p class="footer-tagline">Invest smarter. Trade securely. Almassa Gold – Where your value shines. <span class="diamond">💎</span></p>
+    </footer>
+</body>
+</html>
